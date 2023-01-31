@@ -1,0 +1,150 @@
+/* @import "reset.css"; */
+/* тимчасово вимкнув підключення файлу із збросом базових стилів (параметрів та іх значень) за замовчуванням */
+
+/* селектор * - звернення до всіх елементів на сторінці */
+* {
+    background-color: rgb(242, 245, 248);
+}
+
+
+/* селектор тегу - звернення до всіх div/h1 на сторінці */
+div {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(244, 100, 22);
+} 
+
+
+/* селектор id */
+#zametki {
+    color: chocolate;
+}
+
+
+/* селектори атрибуту */
+[title] {
+    color: rgb(4, 113, 26);
+}
+
+[href="https://vancouverok.com/immigraciya-v-kanadu-po-express-entry-kak-nabrat-nuzhnyj-ball"]{
+color: rgb(16, 92, 54);
+}
+
+[href="https://vancouverok.com/news/opublikovany-rezultaty-zherebevok-pnp-ot-chetyreh-kanadskih-provincij"] {
+    color: rgb(71, 170, 139);
+}
+
+[title~="телеграм"] {
+    color: rgb(95, 146, 242);
+}
+
+[title~="Ссылка"] {
+    color: rgba(255, 20, 145, 0.945);
+}
+
+[title|="youtube"] {
+    color: fuchsia;
+}
+
+[class^="increase"] {
+    color: olive;
+}
+[class$="applications"] {
+    color: rgb(105, 89, 82);
+}
+
+[class*="em_"] {
+    color: darkseagreen;
+}
+
+
+/* селектор класу - звернення до елементу по класу */
+.author {
+    color: rgb(111, 92, 66);
+}
+
+.subtitle {
+    color: rgb(213, 39, 39);
+}
+
+
+/* селектор тегу та селектор класу */
+
+span.intro {
+    color: brown;
+}
+
+
+/* селектор декылькох класыв у одного обэкта */
+.text__art-6.mariage {
+    color: rgb(201, 21, 21);
+}
+
+
+/* перелік тегів */
+p a {
+    color: rgb(110, 20, 85);
+}
+
+ul li {
+    color: rgb(100, 104, 114);
+}
+
+
+
+/* вкладеність */
+/* селектор тегу в класі (селектор в селекторі - вкладеність)*/
+.subtitle__item a {
+    color: rgba(112, 97, 18, 0.678);
+}
+
+.subarticle-6 a {
+    color: crimson;
+}
+
+
+/* клас в класі */
+.subarticle__text .atlantic__text {
+    color: rgb(84, 84, 124);
+}
+
+
+/* комбінації */
+.additional__articles-container .additional__article-title,
+.additional__article a {
+    color: rgb(9, 9, 150);
+}
+
+
+/* звернення до будь якого обэкту в певному класы */
+.subarticle-10 * {
+    color: rgb(87, 173, 59);
+}
+
+.subarticle-11 * {
+    color: rgb(63, 137, 121);
+}
+
+
+/* вкладеність */
+div > h2 {
+    color: rgb(62, 11, 11);
+}
+
+
+/* звернення селектору до обєкта того ж рівня вкладеності але за певним обєктом */
+.new__programs ~ p {
+    color: rgb(50, 63, 50);
+}
+
+
+/* звернення до обэкту який прямує за вказаним і тільки до нього */
+.nany__work + p {
+    color: rgb(101, 75, 9);
+}
+
+
+
+
