@@ -1,0 +1,244 @@
+
+@import url("reset.css");
+/*----------------- Підключення шрифтів через плагін google fonts - css import ----------------------- */
+/* */
+@import url(https://fonts.googleapis.com/css?family=Domine:regular,500,700&display=swap);
+
+/*----------------- Підключення шрифтів вручну ----------------------- */
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-Light.woff2') format('woff2'),
+        url('../fonts/Cormorant-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-LightItalic.woff2') format('woff2'),
+        url('../fonts/Cormorant-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-SemiBold.woff2') format('woff2'),
+        url('../fonts/Cormorant-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Cormorant-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-Regular.woff2') format('woff2'),
+        url('../fonts/Cormorant-Regular.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-Italic.woff2') format('woff2'),
+        url('../fonts/Cormorant-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unna';
+    src: url('../fonts/Unna-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Unna-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unna';
+    src: url('../fonts/Unna-Italic.woff2') format('woff2'),
+        url('../fonts/Unna-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unna';
+    src: url('../fonts/Unna-Bold.woff2') format('woff2'),
+        url('../fonts/Unna-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unna';
+    src: url('../fonts/Unna-Regular.woff2') format('woff2'),
+        url('../fonts/Unna-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*----------------- Стилі ----------------------- */
+
+* {
+    font-family: 'Cormorant';
+    font-size: 18px;
+    background-color: rgb(242, 236, 236);
+}
+
+.wrapper {
+    padding: 40px;
+}
+
+.subarticle, .secondary__title {
+    margin-bottom: 30px;
+}
+
+.article__info {
+    margin: 0 0 0 220px;
+}
+
+.titel__image, .native__people {
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+}
+
+h1, h2 {
+    font-family: 'Cormorant';
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(211, 32, 32);
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    text-shadow: 2px 2px 1px rgb(183, 168, 168);
+    white-space: nowrap;
+}
+
+h1 {
+letter-spacing: -1px;
+}
+
+h2 {
+word-spacing: 10px;
+}
+
+.second__title {
+    text-transform: uppercase;
+    text-decoration: overline;
+    margin-top: 50px;
+}
+
+.author__name, .date, .source a {
+    font-family: 'Unna';
+    font-weight: 400;
+    color: rgba(91, 43, 8, 0.609);
+    line-height: 30px;
+}
+
+.author__name {
+font-style: italic;
+}
+
+.date {
+    text-transform: lowercase;
+}
+
+span {
+    color: rgb(199, 19, 19);
+    text-decoration: underline;
+}
+
+.source a, .population__link, .population__link a {
+    font-family: 'Raleway';
+    color: darkslateblue;
+    font-size: 16px;
+}
+
+.intro__text, .language__article-links {
+    font-family: 'Unna';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(123, 41, 41, 0.624);
+    line-height: 30px;
+    text-indent: 20px;
+}
+
+.language__article-links {
+    text-decoration: underline;
+}
+
+.title {
+    font-family: 'Cormorant';
+    font-weight: 600;
+    font-size: 32px;
+    text-align: left;
+    line-height: 60px;
+    color: rgba(32, 32, 91, 0.839);
+    text-shadow: 2px 2px 2px rgba(228, 147, 147, 0.774);
+}
+
+.title span {
+    font-family: 'Raleway';
+    font-weight: 500;
+    color: rgb(159, 13, 30);
+    text-decoration: underline;
+}
+
+.subarticle__text p, span{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+div.subarticle__text > p, .population__link {
+    text-indent: 20px;
+}
+
+.france__lang-mark {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.quebek__link {
+    color: darkgreen;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.france__lang-crossed {
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: rgb(195, 186, 186);
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
+
+
+
+
+
+
