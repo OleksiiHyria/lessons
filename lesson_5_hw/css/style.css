@@ -1,0 +1,208 @@
+/*  підключкення файлу обнулення стилів */
+@import url("reset.css");
+
+/* підключення шрифтів */
+/* підключення шрифтів здійснено через html і через css */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ============================= styles ============================== */
+/* ====================== main article container ===================== */
+
+body {
+    background-color: #F8F9FA;
+    
+}
+
+.wrapper {
+    font-family: 'Poppins';
+}
+
+.main__content-container {
+    max-width: 1240px;
+    margin: 0 auto;
+
+}
+
+/* ============================ main title ========================== */
+.main__title-container {
+    background-image: url("../img/title_view.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    min-width: 400px;
+    margin: 0 0 80px 0;
+}
+
+.titel__text-container {
+    max-width: 400px; 
+    min-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 225px;
+}
+/* не виходить відцентрувати по вертикалі без застосування position: relative; top */
+/* але при зменшені viewporta текст спускається до низу */
+
+
+.subtitle__1, .subtitle__2 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    color: #E5E5E5;
+    text-align: center;
+}
+
+.main__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: #E5E5E5;
+    text-align: center;
+}
+
+.subtitle__2 {
+}
+
+.about__article p{
+    display: inline-block;
+}
+
+.article__date, .title__time, .author {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    color: #6C757D;
+}
+
+.author {
+    font-weight: 700;
+}
+
+div.dash {
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    border: 1px solid #E5E5E5;
+    position: relative;
+    bottom: 3px;
+}
+
+/* ============================ article text containers ============================ */
+.first__part-container, 
+.second__part-container, 
+.third__part-container {
+    max-width: 816px;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.text__frame {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6C757D;
+}
+
+.title2__text-container {
+    max-width: 400px;
+    height: 80px;
+    margin: 0 0 40px 0;
+}
+
+.title2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: #212529;
+}
+
+.about__article {
+    margin: 0 0 15px 0;
+}
+
+.article__text1 {
+    margin: 0 0 80px 0;
+}
+
+.big__image {
+    margin: 0 0 80px 0 ;
+}
+
+.big__image img {
+}
+
+.title3__text-container {
+    max-width: 605px;
+    margin: 0 0 40px 0;
+}
+
+.article__text2 {
+}
+
+.second__part-container {
+    margin-bottom:  40px;
+}
+
+.p__ident {
+    margin: 0 0 40px 0;
+}
+
+.small__image-container {
+    font-size: 0px;
+    margin: 0 0 80px 0;
+}
+
+.small__image1 {
+    margin-right: 30px;
+}
+
+.article__text3 {
+    margin: 0 0 60px 0;
+}
+
+.links__list {
+    font-size: 0px;
+    margin: 0 0 98px 0;
+}
+
+.list__item {
+    display: inline-block;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+    line-height: 20px;
+    font-size: 8px;
+    font-weight: 700;
+    color: #6C757D;;
+    text-transform: uppercase;
+    padding: 2px 13px;
+    margin: 0 15px 0 0;
+}
+
+
