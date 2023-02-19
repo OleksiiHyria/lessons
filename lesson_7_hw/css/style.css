@@ -1,0 +1,216 @@
+@import url("reset.css");
+
+.wrapper {
+    margin-top: 30px;
+    background-color: #D7DFF8;
+}
+
+/* =============================== first screen ====================== */
+
+.first__screen {
+    font-family: "Poppins";
+    max-width: 100%;
+    background: url("../img/img_01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    padding: 0 15px;
+    color: #E5E5E5;
+    margin-bottom: 30px;
+}
+
+.first__screen-contaimer {
+    max-width: 1270px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.vence__logo {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 18px;
+    color: #F8F9FA;
+    letter-spacing: 1px;
+}
+
+.dote {
+    color: #DDBEA9;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.title__box-1 {
+    padding: 330px 0 100px 0;
+
+}
+
+.date {
+    font-weight: 300;
+    line-height: 0.8; /* 20/25 */
+    font-size: 12px;
+}
+
+.ident {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.main__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6; /* 40/25 */
+    max-width: 605px;
+}
+
+.subtitle {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 399px;
+}
+
+
+/* =============================== second screen ====================== */
+
+.second__screen {
+    background: rgb(244, 247, 255);
+    background: url("../img/speaker_1.png") no-repeat 78% center, linear-gradient(113deg, rgba(244, 247, 255, 1) 68%, rgba(231, 237, 253, 1) 68%, rgba(244, 247, 255, 1) 73%, rgba(215, 223, 248, 1) 73%, rgba(244, 247, 255, 1) 82%);
+    min-height: 560px;
+    font-family: "Inter";
+    margin-bottom: 30px;
+}
+
+.second__screen-container {
+    max-width: 1270px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title__box-2 {
+    padding: 0 15px;
+    min-width: 1000px;
+    padding-top: 250px;
+}
+
+.price {
+    color: #3056D3;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 13px;
+}
+
+.title-2 {
+    color: #212B36;
+    font-size: 36px;
+    line-height: 1.25; /* 45/36 */
+    /* line-height: 45px; */
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+.title__text {
+    color: #637381;
+    font-size: 16px;
+    line-height: 1.5; /* 24/16 */
+    display: block;
+    margin-bottom: 35px;
+}
+
+.button {
+    width: 140px;
+    height: 45px;
+    Background-color: #3056D3;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 12px;
+    padding-top: 10px;
+    box-shadow: 5px 8px 5px -5px rgb(119, 115, 209);
+}
+
+.blue__button {
+}
+
+.button:hover {
+    color: #DDBEA9;
+}
+
+
+/* =============================== third screen ====================== */
+
+.third__screen {
+    background-color: #E5E5E5;
+}
+
+.third__screen-container {
+    padding: 0 15px;
+    font-family: "Inter";
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.examples__ul {
+    color: #637381;
+    font-size: 16px;
+    line-height: 1.25; /* 20/16 */
+}
+
+.title__ul {
+    color: #212B36;
+    font-size: 26px;
+    line-height: 1.1;
+    padding: 30px;
+}
+
+ul {
+    display: inline-block;
+    margin: 0 100px 100px 0;
+}
+
+.examples__ul li {
+    padding-bottom: 15px;
+}
+
+.list__1 li {
+    background: url(../img/icons/1.png) 0 5px no-repeat;
+    padding-left: 20px;
+}
+
+.list__2 li {
+    background: url(../img/icons/2.png) 0 0px no-repeat;
+    line-height: 20px;
+    padding-left: 30px;
+}
+
+.list__3 li {
+    background: url("../img/icons/3.png") no-repeat;
+    padding-left: 30px;
+}
+
+.list__4 li {
+    background: url("../img/icons/4.png") no-repeat;
+    padding-left: 30px;
+}
+
+.list__5 li {
+    background: url("../img/icons/5.png") no-repeat;
+    padding-left: 30px;
+}
+
+.list__6 li {
+    background: url("../img/icons/6.png") no-repeat;
+    padding-left: 30px;
+}
