@@ -1,0 +1,389 @@
+@import url("reset.css");
+@import url("common.css");
+
+/* =========================== fonts =========================== */
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+
+/* =========================== styles ========================== */
+
+.body {
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    font-family: "Inter";
+    background-color: rgba(204, 208, 211, 0.298);
+}
+
+.header {}
+
+.header__container {
+    min-width: 1440px;
+    height: 104px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    max-width: 160px;
+    margin-left: 130px;
+    margin-right: 40px;
+}
+
+.logo__image {
+    position: relative;
+    bottom: 10px;
+    left: 0;
+}
+
+.logo__text-image {}
+
+.header__menu {
+}
+
+/* ============================= main menu ============================*/
+
+.menu {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5; 
+    font-weight: 500;
+    color: #637381;
+}
+
+.menu__list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu__item {
+    display: inline-block;
+    position: relative;
+    /* позиціонування відносно даного елементу */
+}
+
+.menu__item:not(:last-child){
+    margin-right: 35px;
+}
+
+.menu__item:first-child {
+    margin-right: 45px; 
+}
+
+.menu__item:hover:not(:first-child) {
+    color: #3056D3;
+}
+
+.menu__item:hover .menu-categories {
+    display: block;
+}
+
+.menu__item:hover .categories-separator {
+    display: block;
+}
+
+.menu__item--button {
+    padding: 10px 20px;
+    background-color: #F4F7FF;
+    border-radius: 4px;
+    min-width: 172px;
+    color: #212B36;
+}
+
+.menu__item--button::after {
+    content: url('../img/icons/menu_mark.svg');
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+}
+
+.menu__item:nth-child(4)::after {
+    content: url('../img/icons/menu_mark.svg');
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+}
+
+.menu__link {
+    /* padding-bottom: 70px; */
+    /* ??? */
+}
+
+/* ============================== menu-categories ===================== */
+
+.categories-separator {
+    position: absolute;
+    top: 100%;
+    right: -5px;
+    width: 180px;
+    height: 40px;
+    /* background-color: rgb(75, 67, 67); */
+    display: none;
+}
+
+.categories-menu {}
+
+.menu-categories {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    min-width: 180px;
+    min-height: 263px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #637381;
+}
+
+.menu-categories::before {
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+}
+
+.menu-categories__item {
+    position: relative;
+    padding-left: 24px;
+}
+
+.menu-categories__item:nth-child(2)::before{
+    content: url('../img/icons/right_side_mark.svg');
+    position: absolute;
+    top: 0;
+    left: 150px;
+    z-index: 1;
+}
+
+.menu-categories__item:nth-child(2)::after {
+    content: '';
+    display: block;
+    min-height: 35px;
+    min-width: 50px;
+    position: absolute;
+    top: -5px;
+    left: 150px;
+    /* background-color: rgb(69, 170, 229); */
+}
+
+.menu-categories__item:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+.menu-categories li:first-child {
+    margin-top: 23px;
+}
+
+.menu-categories li:last-child {
+    margin-bottom: 23px;
+}
+
+
+.menu-categories__link:hover {
+    color: #3056D3;
+}
+
+.menu-categories__item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.menu-categories__link {
+}
+
+
+
+/* ================================= fashion menu ===================== */
+
+.menu-categories__fashion-menu {
+}
+
+.menu-fashion {
+    background-color: #ffffff;
+    min-width: 652px;
+    min-height: 308px;
+    position: absolute;
+    top: -20px;
+    left: 185px;
+    border-radius: 5px;
+    color: #637381;
+}
+
+.menu-fashion__item {
+    padding-left: 30px;
+}
+
+.menu-fashion__item:not(:last-child, :first-child) {
+    margin-bottom: 12px;
+}
+
+.menu-fashion__item:first-child {
+    margin-bottom: 15px;
+    color: #212B36;
+    font-size: 16px;
+    line-height: 1.5; /* 24/16 */
+}
+
+.menu-fashion__item:hover:not(:first-child) {
+    color: #3056D3;
+}
+
+/* ============================= trending menu ======================= */
+
+.menu-categories__big-menu {
+    display: none;
+}
+
+.menu-categories__item:hover .menu-categories__big-menu {
+    display: block;
+}
+
+.menu-categories__trending-menu {
+}
+
+.menu-trend {
+    position: absolute;
+    top: -20px;
+    left: 410px;
+    min-width: 110px;
+    color: #637381;
+}
+
+.menu-trend__item:not(:first-child, :last-child) {
+    padding-bottom: 12px;
+}
+
+.menu-trend__item:first-child {
+    padding-bottom: 15px;
+    color: #212B36;
+    font-size: 16px;
+    line-height: 1.5;
+    /* оптимізувати з 220 */
+}
+
+.menu-trend__item:hover:not(:first-child) {
+    color: #3056D3;
+}
+
+/* ============================= discount-picture ==================== */
+
+.menu-categories__picture-sales {
+}
+
+.sales-picture, .sales-picture__image {
+    background-color: rgba(205, 131, 90, 0.65);
+    position: absolute;
+    top: 10px;
+    left: 585px;
+    min-width: 220px;
+    min-height: 248px;
+}
+
+.sales-picture__discount {
+    color: #ffffff;
+    padding-top: 65px;
+    margin-left: 66px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2; /* 48/40 */
+    margin-bottom: 10px;
+}
+.sales-picture__text {
+    font-size: 20px;
+    line-height: 1.2; /* 24/20px */
+    font-weight: 600;
+    color: #ffffff;
+    margin-left: 45px;
+    margin-bottom: 21px;
+}
+
+.sales-picture__button {
+    background-color: #3056D3;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 69px;
+    padding: 5px 13px 7px 15px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1.2; /* 13/11 */
+    border-radius: 2px;
+}
+
+/* =========================== right-side menu ======================== */
+
+.header__right-menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.header__search-form {
+    position: relative;
+    bottom: -40px;
+    right: 250px;
+}
+
+.header__favourite {}
+
+.favourite {}
+
+.favourite__image {
+    position: relative;
+    bottom: -15px;
+    right: 210px;
+}
+
+.favourite__number {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.3;
+    background-color: #3056D3;
+    color: #ffffff;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    bottom: -5px;
+    right: 222px;
+}
+
+.header__basket {}
+
+.basket {
+    position: relative;
+    bottom: 11px;
+    right: 170px;
+}
+
+.basket__image {}
+
+.basket__number {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.3;
+    background-color: #3056D3;
+    color: #ffffff;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    bottom: 6px;
+    right: 15px;
+}
