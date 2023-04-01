@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+		<!-- FLEX-container -->
+		<div class="wrapper">
+			<header>
+			</header>
+			<main class="page">
+                <div class="form-wrapper-1">
+                    <div class="title-box title">
+                        <h2 class="title__headline">Checkout</h2>
+                        <p class="title__text">There are 3 products in your cart</p>
+                        <h4 class="sub-title-1">Billing Details</h4>
+                    </div>
+                    <div class="form-box">
+                        <form action="https://jsonplaceholder.typicode.com/posts" class="main-form" method="POST">
+                            <div class="row-fields row-1">
+                                <div class="row-1__line line">
+                                    <input type="text" name="first__name" placeholder="First name*" autocomplete="on" required tabindex="1" checked class="line__imput">
+                                </div>
+                                <div class="row-1__line line">
+                                    <input type="text" name="address" placeholder="Address*" autocomplete="on" required tabindex="3" checked class="line__imput">
+                                </div>
+                                <div class="row-1__line line">
+                                    <input type="text" name="country" placeholder="Country*" autocomplete="on" required tabindex="5" checked class="line__imput">
+                                </div>
+                                <div class="row-1__line line">
+                                    <input type="text" name="postcode_2" placeholder="Postcode / ZIP*" autocomplete="on" required tabindex="7" checked class="line__imput">
+                                </div>
+                                <div class="row-1__line line">
+                                    <input type="text" name="postcode_2" placeholder="Postcode / ZIP*" autocomplete="on" required tabindex="9" checked class="line__imput">
+                                </div>
+                            </div>
+                            <div class="row-fields row-2">
+                                <div class="row-2__line line">
+                                    <input type="text" name="last__name" placeholder="Last name*" autocomplete="on" required tabindex="2" checked class="line__imput">
+                                </div>
+                                <div class="row-2__line line">
+                                    <input type="text" name="address_line_2" placeholder="Address line 2*" autocomplete="on" required tabindex="4" checked class="line__imput">
+                                </div>
+                                <div class="row-2__line line">
+                                    <input type="text" name="City/Town" placeholder="City/Town*" autocomplete="on" required tabindex="6" checked class="line__imput">
+                                </div>
+                                <div class="row-2__line line">
+                                    <input type="text" name="phone_1" placeholder="Phone*" autocomplete="on" required tabindex="8" checked class="line__imput">
+                                </div>
+                                <div class="row-2__line line">
+                                    <input type="text" name="phone_2" placeholder="Phone*" autocomplete="on" required tabindex="10" checked class="line__imput">
+                                </div>
+                            </div>
+                            <div class="row-fields row-3">
+                                <div class="row-3__box">
+                                    <div class="row-3__textarea textarea-line line">
+                                        <textarea class="textarea-line__imput" tabindex="11" name="additional_information" placeholder="Additional information" type="text" autocomplete="off" id=""></textarea>
+                                    </div>
+                                    <div class="row-3__box-radio">
+                                        <div class="row-3__check-box checkbox-line">
+                                            <input class="checkbox-line__input" id="check-1" type="checkbox" name="create_account" value="yes" autocomplete="off" tabindex="12">
+                                            <label class="checkbox-line__label" for="check-1">Create Account</label>
+                                        </div>
+                                        </div>
+                                    <div class="row-3__box checkbox-line">
+                                        <input class="checkbox-line__input" id="check-2" type="checkbox" name="different_address" autocomplete="off" tabindex="13" checked>
+                                        <label class="checkbox-line__label" for="check-2">Ship to a different address?</label>
+                                    </div>
+                                </div>
+                                <button tabindex="17" class="row-4__place-button" type="submit">Place an Order</button>
+                            </div>
+                    </form>
+                    <form action="https://jsonplaceholder.typicode.com/posts" class="secondary-form" method="POST" >
+                        <div class="row-fields row-4">
+                            <h4 class="row-4__sub-title">Apply Coupon to get discount!</h4>
+                            <div class="row-4__line">
+                                <input tabindex="15" class="row-4__input line__imput line" name="coupon_code" placeholder="Coupon code" maxlength="6" type="text">
+                                <button tabindex="16" class="row-4__apply-button" type="submit">Apply Code</button>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                <div class="form-wrapper-2">
+                    <form action="https://jsonplaceholder.typicode.com/posts" class="crisp-form" method="POST">
+                        <div class="crisp-title-box">
+                            <h2 class="crisp-title">Shipping Address</h2>
+                        </div>
+                        <div class="crisp-login-form">
+                            <div class="login-lines-box">
+                                <div class="login-form-line form-line">
+                                    <label for="crisp_1" class="form-line__label">Email Address <span class="asterisk">*</span></label>
+                                    <input id="crisp_1" tabindex="18" class="form-line__input" name="login" type="text" required minlength="6"
+                                        maxlength="20" autocomplete="off" placeholder="roni_cost@example.com">
+                                </div>
+                                <div class="login-form-line form-line">
+                                    <label for="crisp_2" class="form-line__label">Password<span class="asterisk">*</span></label>
+                                    <input id="crisp_2" tabindex="19" class="form-line__input" name="password" type="password" required minlength="6"
+                                        maxlength="20" autocomplete="off" placeholder="******************">
+                                </div>
+                                <div class="login-form-line form-line">
+                                    <label for="crisp_3" class="form-line__label">Zip/Postal Code</label>
+                                    <input id="crisp_3" tabindex="20" class="form-line__input" type="text" required minlength="6" maxlength="20"
+                                        autocomplete="off" placeholder="roni_cost@example.com">
+                                </div>
+                            </div>
+                            <div class="login-text-box text-box">
+                                <p class="text-box__text">You already have an account with us. Sign in or continue as guest.</p>
+                            </div>
+                            <div class="login-button-box button-box">
+                                <button tabindex="21" class="button-box__button">Login</button>
+                                <a href="#" class="forgot-link">Forgot Your Password?</a>
+                            </div>
+                        </div>
+                        <div class="demarcation-line1"></div>
+                        <div class="login-lines-box">
+                            <div class="login-form-line form-line">
+                                <label for="crisp_4" class="form-line__label">First Name<span class="asterisk">*</span></label>
+                                <input id="crisp_4" tabindex="22" class="form-line__input" name="first_name " type="text" maxlength="20" autocomplete="off" required>
+                            </div>
+                            <div class="login-form-line form-line">
+                                <label for="crisp_5" class="form-line__label">Last Name<span class="asterisk">*</span></label>
+                                <input id="crisp_5" tabindex="23" class="form-line__input" name="last_name" type="text" maxlength="20" autocomplete="off" required>
+                                </div>
+                            <div class="login-form-line form-line">
+                                <label for="crisp_6" class="form-line__label">Company</label>
+                                <input id="crisp_6" tabindex="24" class="form-line__input" name="company" type="text" maxlength="20" autocomplete="off">
+                            </div>
+                            <div class="login-form-line form-line">
+                                <label for="crisp_7" class="form-line__label">Street Address<span class="asterisk">*</span></label>
+                                <input id="crisp_7" tabindex="25" class="form-line__input" name="street_address" type="text" maxlength="20" autocomplete="off">
+                            </div>
+                            <div class="login-form-line form-line login-lines--add-lines">
+                                <label for="crisp_0" class="form-line__label"></label>                                
+                                <input id="crisp_0" tabindex="26" class="form-line__input" name="street_address_2" type="text" maxlength="20" autocomplete="off">
+                            </div>
+                            <div class="login-form-line form-line login-lines--add-lines">
+                                <label for="crisp_0" class="form-line__label"></label>                                
+                                <input id="crisp_0" tabindex="27" class="form-line__input" name="street_address_3" type="text" maxlength="20" autocomplete="off">
+                            </div>
+                            <div class="login-form-line form-line">
+                                <label for="crisp_8" class="form-line__label">Country<span class="asterisk">*</span></label>
+                                <input id="crisp_8" tabindex="28" class="form-line__input" name="Country" type="text" maxlength="20" autocomplete="off" required>
+                            </div>
+                            <div class="login-form-line form-line">
+                                <label for="crisp_9" class="form-line__label">State/Province<span class="asterisk">*</span></label>
+                                <select id="crisp_9" tabindex="29" class="form-line__input form-line--region-selection" name="state_province" maxlength="20" autocomplete="off" placeholder="Please select a region, state or province" required>
+                                    <option value="1">Ukraine</option>
+                                    <option value="2">USA</option>
+                                    <option value="3">Canada</option>
+                                    <option value="4">Australia</option>
+                                    <option value="5">England</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="crisp-title-box">
+                            <h2 class="crisp-title">Shipping Methods</h2>
+                        </div>
+                        <div class="ship-methods-box">
+                            <div class="demarcation-line2"></div>
+                            <div class="method-checkbox-box">
+                                <input class="checkbox__input" id="check1" type="radio" name="method_checkbox" value="" tabindex="30" checked>
+                                <label class="checkbox__label1 label__check" for="check1">$5.00</label>
+                                <span class="checkbox__table-rate1">Fixed</span>
+                                <span class="checkbox__best-way">Flat Rate</span>
+                            </div>
+                            <div class="demarcation-line3"></div>  
+                            <div class="method-checkbox-box checkbox">
+                                <input class="checkbox__input" id="check2" type="radio" name="method_checkbox" value="" tabindex="31">
+                                <label class="checkbox__label2 label__check" for="check2">$10.00</label>
+                                <span class="checkbox__table-rate2">Table Rate</span>
+                                <span class="checkbox__best-way">Best Way</span>
+                            </div>
+                        </div>
+                        <div class="form-buttons">
+                            <div class="login-button-box button-box">
+                                <button tabindex="32" class="next button-box__button">NEXT</button>
+                            </div>
+                            <div class="login-button-box button-box">
+                                <button tabindex="33" class="back">BACK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+			</main>
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>
